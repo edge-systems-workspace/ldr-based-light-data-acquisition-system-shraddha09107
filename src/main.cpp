@@ -61,4 +61,5 @@ void loop() {
 
     // TODO 9:
     // Add delay (500ms or 1 second)
+    delay(1000); // Wait for 1 second before reading again
 }
