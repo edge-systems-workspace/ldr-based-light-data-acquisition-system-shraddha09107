@@ -2,8 +2,8 @@
 /**
  * @file main.ino
  * @brief Embedded Light Intensity Monitoring using LDR
- * @author YOUR_NAME
- * @date YYYY-MM-DD
+ * @author Shraddha Singh
+ * @date 2026-02-21
  *
  * @details
  * Reads analog brightness data from LDR sensor
@@ -12,9 +12,12 @@
 
  // TODO 1:
  // Define LDR analog pin (Use A0)
+int ldrPin = A0;
 
  // TODO 2:
  // Create variable to store sensor reading
+int ldrValue = analogRead(ldrPin);
+int lightPercentage = map(ldrValue, 0,1023, 100, 0);
 
 void setup() {
 
